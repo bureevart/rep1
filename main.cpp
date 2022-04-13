@@ -8,6 +8,13 @@ struct Point{
     int y;
 };
 
+/**
+ * Расстояние между двумя точками
+ *
+ * @param point1 первая точка
+ * @param point2 вторая точка
+ * @return расстояние
+ */
 double getDistanceBetweenTwoPoints (Point point1, Point point2) {
     double distance = sqrt(pow(point1.x - point2.x, 2) + pow(point1.y - point2.y, 2));
     return distance;
